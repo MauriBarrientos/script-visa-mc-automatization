@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rendición MasterCard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  body{font-family:Arial;margin:20px;background:#f6f8fa;color:#222}
+  h1{font-size:1.2rem}
+  .row{display:flex;gap:12px;margin-bottom:12px}
+  button{padding:10px 14px;border-radius:8px;border:0;cursor:pointer;color:#fff;font-weight:600}
+  #btnSeparar{background:#0078d7}
+  #btnSepararVisa{background:#0078d7}
+  #btnFormatearVisa{background:#156082}
+  #btnFormatear{background:#156082}
+  #preview{margin-top:15px;padding:12px;background:#fff;border-radius:8px;max-height:400px;overflow:auto}
+  table{border-collapse:collapse;width:100%;font-size:12px}
+  td{border:1px solid #e2e8f0;padding:4px 6px;white-space:nowrap}
+</style>
+</head>
+
+<body>
+
+<h1> Rendición MasterCard — Procesamiento</h1>
+
+<div class="row">
+  <button id="btnSeparar">Separar RDEBLIMC</button>
+  <button id="btnFormatear">Formatear Rendición MC</button>
+</div>
+
+<div id="preview">Vista previa aparecerá aquí después de la separación.</div>
+
+
+<div class="row">
+  <button id="btnSepararVisa">Separar RDEBLIQC</button>
+  <button id="btnFormatearVisa">Formatear Rendición Visa</button>
+</div>
+
+<div id="statusVisa" style="margin-top:10px; font-weight:bold;"></div>
+
+<div id="previewVisa" style="margin-top:15px; padding:12px; background:#fff; border-radius:8px; max-height:400px; overflow:auto;">
+  La vista previa aparecerá aquí después de la separación.
+</div>
+
+<button id="downloadVisaSep" 
+        style="display:none; margin-top:10px; background:#0078d7; padding:10px 14px; border-radius:8px; border:0; cursor:pointer; color:#fff; font-weight:600;">
+  Descargar XLSX Visa
+</button>
+
+
+<script src="separacion_mc.js"></script>
+<script src="separacion_visa.js"></script>
+<script src="formateo_mc.js"></script>
+<script src="formateo_visa.js"></script>
+
+</body>
+</html>
