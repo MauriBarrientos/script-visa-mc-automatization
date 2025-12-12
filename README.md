@@ -7,4 +7,4 @@ Pasos a realizar:
 2- Despliega el html para visualizarlo en el navegador utilizando tu herramienta de preferencia (Live Server por ejemplo)
 3- Es necesario disponer de los archivos de respuestas provenientes de Prisma y cargarlos donde corresponde.
 4- Obtener el informe separado y columnado.
--
+
