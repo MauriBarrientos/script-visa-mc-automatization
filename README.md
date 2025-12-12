@@ -13,7 +13,7 @@ El script permite cargar los archivos de respuesta provenientes de **Prisma**, p
 ## Instrucciones de uso
 1. Clonar este repositorio en tu máquina local.
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/MauriBarrientos/script-visa-mc-automatization.git
 
 2. Abrir el archivo HTML en tu navegador.
    Puede hacerse directamente o usando herramientas como Live Server.
